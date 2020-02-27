@@ -1,0 +1,8 @@
+{
+  "name": "client_vue",
+  "version": "1.0.0",
+  "description": "client to connect modulus3",
+  "main": "index.js",
+  "author": "Brandon Vergara <leovergara.dar@gmail.com>",
+  "license": "MIT"
+}
