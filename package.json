@@ -4,5 +4,8 @@
   "description": "client to connect modulus3",
   "main": "index.js",
   "author": "Brandon Vergara <leovergara.dar@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^2.6.11"
+  }
 }
