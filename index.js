@@ -18,7 +18,11 @@ const app = new Vue({
 	},
   methods: {
     sendRequestCredit(){
-      this.$http.get('https://postman-echo.com/get?foo1=bar1&foo2=bar2', {}).then(response => {
+      let headers = {
+        'Content-Type': 'application/json;charset=utf-8',
+        'Access-Control-Allow-Origin': "http://127.0.0.1:5500"
+      };
+      this.$http.post('https://reqbin.com/sample/post/json', {}, headers).then(response => {
         console.log(response)
          }, response => {
            console.log(response)
