@@ -10,7 +10,7 @@ const app = new Vue({
   },
 	created: function() {
 		console.log("Iniciado")
-    this.$http.get('https://jsonplaceholder.typicode.com/users')
+    this.$http.get('http://localhost:8080/businessEntity/getAllActiveEmployeesForCompany?corporateId=1')
       .then(response => {
         this.sources = response.data.sources;
         console.log(response.data)
