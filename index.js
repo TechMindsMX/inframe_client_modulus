@@ -18,11 +18,8 @@ const app = new Vue({
 	},
   methods: {
     sendRequestCredit(){
-      let headers = {
-        'Content-Type': 'application/json;charset=utf-8',
-        'Access-Control-Allow-Origin': "http://127.0.0.1:5500"
-      };
-      this.$http.post('https://reqbin.com/sample/post/json', {}, headers).then(response => {
+      console.log("Seding request")
+      this.$http.post('http://localhost:8080/creditRest/save', {}).then(response => {
         console.log(response)
          }, response => {
            console.log(response)
